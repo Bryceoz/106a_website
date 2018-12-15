@@ -254,19 +254,29 @@
                     <p>
                       The ROS package, gmapping, uses 5DOF slam with the 2D laserscan and the odometry message to publish data in an occupancy grid and to determine relative position for our environment. Our system is also capable of 6DOF slam.
                     </p>
+                    <div class="center">
+                      <img alt="Image" src="img/5dof.jpg"/>
+                    </div>
                     <p>
-                      The navigation stack uses a TEB planner to develop a local and global cost map which utilizes the occupancy grid and “tf” transform. When selecting a navigation goal, it calls on the local and global planners to find a path in planner, which then publishes waypoints (in the form of a Twist) to the cmd_vel topic. This Twist is then converted to PWM values for our steering and drive motors. These values are then subscribed to with the drive-by-wire computer communication node to send the necessary signals to the ESC and servo.
+                      The navigation stack uses a TEB planner to develop a local and global cost map which utilizes the occupancy grid and “tf” transform. The TEB planner uses a simple Ackermann steering model. When selecting a navigation goal, it calls on the local and global planners to find a path in planner, which then publishes waypoints (in the form of a Twist) to the cmd_vel topic. This Twist is then converted to PWM values for our steering and drive motors. These values are then subscribed to with the drive-by-wire computer communication node to send the necessary signals to the ESC and servo.
                     </p>
+                    <div class="center">
+                      <img alt="Image" src="img/Ackermann_turning.png"/>
+                    </div>
+
                     <p>
                       Alternatively, the car can also be controlled via object detection through the front cameras. When running the object detection scheme, the raw camera data is published to usb_cam and the object detection package determines where in the frame the object exists. Depending on the object seen, the car will perform different actions. We trained 3 different signs, Reverse, Follow, and Stop. This information also publishes to the “cmd_vel” topic as a Twist and is processed by the Control Interface the same way messages from the Navigation stack are processed.
                     </p>
                     <div class="center">
-                      <img alt="Image" src="img/urdf_tree.png" width="550" height="300" />
+                      <img alt="Image" src="img/multiple_cameras.jpg"/>
+                      <img alt="Image" src="img/go_sign-1.png"/>
                     </div>
                     <p>
                       A URDF model of the car was created from a 3D CAD in Solidworks. All coordinate frames were connected appropriately in the tf tree. The “tf” and “map” topics were subscribed to by the navigation stack.
                     </p>
-
+                    <div class="center">
+                      <img alt="Image" src="img/urdf_tree.png" width="550" height="300" />
+                    </div>
                  </div>
              </div><!--end of row-->
             </div><!--end of container-->
