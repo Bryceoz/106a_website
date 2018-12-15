@@ -19,48 +19,29 @@
     </head>
     <body class=" ">
         <a id="start"></a>
+
         <div class="nav-container ">
-            <div class="bar bar--sm visible-xs">
+            <nav id="menu1" class="bar bar--sm bar-1 hidden-xs">
                 <div class="container">
-                    <div class="row">
-                        <div class="col-3 col-md-2">
-                            <a href="index.html">
-                                <img class="logo logo-dark" alt="logo" src="img/lidar.png" />
-                                <img class="logo logo-light" alt="logo" src="img/lidar.png" />
-
-
-
-                            </a>
-                        </div>
-                        <div class="col-9 col-md-10 text-right">
-                            <a href="#" class="hamburger-toggle" data-toggle-class="#menu1;hidden-xs">
-                                <i class="icon icon--sm stack-interface stack-menu"></i>
-                            </a>
-                        </div>
-                    </div>
-                    <!--end of row-->
-                </div>
-                <!--end of container-->
-            </div>
-            <!--end bar-->
-            <nav id="menu1" class="bar bar--sm bar-1 hidden-xs bg--dark">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-1 col-md-2 hidden-xs">
+                    <div class="row"  style="margin-top: 10px">
+                        <div class="col-lg-4 col-md-6 hidden-xs">
                             <div class="bar__module">
-                                <a href="index.html">
-
-                                </a>
+                                <h4 style="margin-bottom: 15px !important"><b>AMAC + VR</b></h4>
                             </div>
                             <!--end module-->
                         </div>
-                        <div class="col-lg-11 col-md-12 text-right text-left-xs text-left-sm">
+                        <div class="col-lg-8 col-md-6 text-right text-left-xs text-left-sm">
                             <div class="bar__module">
                                 <ul class="menu-horizontal text-left">
-
+                                  <li><a class="inner-link" href="#overview">Overview</a></li>
+                                  <li><a class="inner-link" href="#introduction">Introduction</a></li>
+                                  <li><a class="inner-link" href="#autonomous-car">Autonomous Car</a></li>
+                                  <li><a class="inner-link" href="#vr">VR</a></li>
+                                  <li><a class="inner-link" href="#conclusion">Conclusion</a></li>
+                                  <li><a class="inner-link" href="#team">Team</a></li>
                                 </ul>
                             </div>
-
+                            <!--end module-->
                         </div>
                     </div>
                     <!--end of row-->
@@ -70,17 +51,20 @@
             <!--end bar-->
         </div>
 
-
         <div class="main-container">
-          <section class="imagebg height-80 parallax" data-overlay="3">
-                     <div class="background-image-holder background--top">
-                         <img alt="image" src="img/lidar.png" />
-                     </div>
-                <div class="container">
+           <section class="cover height-60 imagebg text-center" data-overlay="4">
+                <div class="background-image-holder">
+                    <img alt="background" src="img/lidar.png" />
+                </div>
+                <div class="container pos-vertical-center">
                     <div class="row">
-                        <div class="col-md-12">
-                            <h1>AMAC Autonomous Car &
-                                <br class="hidden-xs hidden-sm" />“Berkeley Goggles” VR Robotic Teleoperation system</h1>
+                        <div class="col-md-8 col-lg-7">
+                            <h1>
+                                Robots for Collaborative Tasks
+                            </h1>
+                            <p class="lead">
+                                AMAC Autonomous Car <br> “Berkeley Goggles” VR Robotic Teleoperation system
+                            </p>
                         </div>
                     </div>
                     <!--end of row-->
@@ -88,7 +72,7 @@
                 <!--end of container-->
             </section>
 
-            <section>
+            <section id="overview">
                 <div class="container">
                     <div class="row justify-content-center">
                         <div class="col-md-10 col-lg-8">
@@ -110,17 +94,17 @@
                                     <img alt="image" src="img/work-single-1.jpg" />
                                 </div>
                                 <div class="video-play-icon"></div>
-                                <iframe data-src="https://www.youtube.com/embed/UFQFUFGn_38?autoplay=1" allowfullscreen="allowfullscreen"></iframe>
+                                <iframe data-src="https://www.youtube.com/embed/UFQFUFGn_38" allowfullscreen="allowfullscreen"></iframe>
                             </div>
                             <!--end video cover-->
-                            <span>In this video we demonstrate our aoutonomous car and virtual robot colloborating together.</span>
+                            <span>In this video we demonstrate our autonomous car and virtual robot collaborating together.</span>
                         </div>
                     </div>
                     <!--end of row-->
                 </div>
                 <!--end of container-->
             </section>
-            <section class="imagebg" class="pos-vertical-center" data-gradient-bg="#328A2E,#256F5C,#29506D,#047BE6">
+            <section class="imagebg" class="pos-vertical-center" data-gradient-bg="#328A2E,#256F5C,#29506D,#047BE6" id="introduction">
               <div class="text-center">
                         <h1>Introduction</h1>
               </div>
@@ -148,7 +132,7 @@
             </section>
 
           </section>
-          <section class="imagebg" class="pos-vertical-center" data-gradient-bg="#328A2E,#256F5C,#29506D,#047BE6">
+          <section class="imagebg" class="pos-vertical-center" data-gradient-bg="#328A2E,#256F5C,#29506D,#047BE6" id="autonomous-car">
             <div class="text-center">
                       <h1>The AMAC Autonomous Car</h1>
 
@@ -311,7 +295,7 @@
 
 
 
-          <section class="imagebg" class="pos-vertical-center" data-gradient-bg="#328A2E,#256F5C,#29506D,#047BE6">
+          <section class="imagebg" class="pos-vertical-center" data-gradient-bg="#328A2E,#256F5C,#29506D,#047BE6" id="vr">
             <div class="text-center">
                       <h1>VR Teleoperation System</h1>
             </div>
@@ -476,7 +460,7 @@
 
 
 
-       <section class="imagebg" class="pos-vertical-center" data-gradient-bg="#328A2E,#256F5C,#29506D,#047BE6">
+       <section class="imagebg" class="pos-vertical-center" data-gradient-bg="#328A2E,#256F5C,#29506D,#047BE6" id="conclusion">
          <div class="text-center">
                    <h1>Conclusion</h1>
          </div>
@@ -500,7 +484,7 @@
 
 
 
-           <section class="imagebg" class="pos-vertical-center" data-gradient-bg="#328A2E,#256F5C,#29506D,#047BE6">
+           <section class="imagebg" class="pos-vertical-center" data-gradient-bg="#328A2E,#256F5C,#29506D,#047BE6" id="team">
              <div class="text-center">
                        <h1>Team</h1>
              </div>
@@ -551,48 +535,6 @@ Experience: has worked on a “biomimetic lizard robot”, previous product desi
                  <!--end of row-->
              </div>
              <!--end of container-->
-         </section>
-
-            <section class="text-center">
-                <div class="container">
-                    <div class="row justify-content-center">
-                        <div class="col-md-8 col-lg-6">
-                            <div class="cta">
-                                <h2></h2>
-                                <p class="lead">
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <!--end of row-->
-                </div>
-                <!--end of container-->
-            </section>
-            <footer class="footer-3 text-center-xs space--xs ">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <ul class="list-inline list--hover">
-                                <li class="list-inline-item">
-                                    <a href="#">
-                                        <span class="type--fine-print"></span>
-                                    </a>
-                                </li>
-                                <li class="list-inline-item">
-                                    <a href="#">
-                                        <span class="type--fine-print"></span>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-
-                    </div>
-                    <!--end of row-->
-
-                    <!--end of row-->
-                </div>
-                <!--end of container-->
-            </footer>
         </div>
         <!--<div class="loader"></div>-->
         <a class="back-to-top inner-link" href="#start" data-scroll-class="100vh:active">
