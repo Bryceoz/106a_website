@@ -134,7 +134,7 @@
           </section>
           <section class="imagebg" class="pos-vertical-center" data-gradient-bg="#328A2E,#256F5C,#29506D,#047BE6" id="autonomous-car">
             <div class="text-center">
-                      <h1>The AMAC Autonomous Car</h1>
+                      <h1>AMAC Autonomous Car</h1>
 
             </div>
           </section>
@@ -146,7 +146,7 @@
                       </div>
                       <div class="col-md-6 col-lg-5">
                           <div class="switchable__text">
-                              <h2>The AMAC</h2>
+                              <h2>AMAC Car</h2>
                               <p class="lead">
                                 An autonomous car, built from the ground up.
                               </p>
@@ -204,10 +204,10 @@
                       </div>
                       <div class="col-md-6 col-lg-5">
                           <div class="switchable__text">
-                              <h2>The AMAC Operations Diagram</h2>
+                              <h2>AMAC Operations Diagram</h2>
                               <p class="lead">
                                 <!-- An autonomous car, built from the ground up. -->
-                                INSERT GOOD CAPTION HERE
+                                Every sensor integration - both hardware and software - were built from the ground up.
                               </p>
 
                               <!--<a href="#">Learn More &raquo;</a>-->
@@ -228,6 +228,17 @@
                       <img alt="Image" src="img/car_diagram2.png"/>
                     </div>
                     <p>
+                      The car was built from the ground up. We took a traditional 1/8th RC Car and stripped it down. We then added wiring for drive by wire capability, 3D printed a sensor chassis, created a power budget and wired everything to one battery using multiple buck-boast converters.
+                    </p>
+                    <div class="row">
+                      <div class="column">
+                        <img alt="Image" src="img/electronics.png" width="500" height="300" />
+                      </div>
+                      <div class="column">
+                        <img alt="Image" src="img/3dprint.png" width="500" height="300" />
+                      </div>
+                    </div>
+                    <p>
                       A “driver” was necessary to communicate with the LiDAR via Ethernet. This “3DPointCloud” is converted by projecting 3D points into a 2D LaserScan structure (defined by a pre-existing Velodyne LiDAR package), which will be used for creating a map.
                     </p>
 
@@ -239,7 +250,7 @@
                       The ROS package, gmapping, uses 5DOF slam with the 2D laserscan and the odometry message to publish data in an occupancy grid and to determine relative position for our environment. Our system is also capable of 6DOF slam.
                     </p>
                     <div class="center">
-                      <img alt="Image" src="img/5dof.jpg" style="width:70%"/>
+                      <img alt="Image" src="img/5dof.jpg" style="width:60%"/>
                     </div>
                     <p>
                       The navigation stack uses a TEB planner to develop a local and global cost map which utilizes the occupancy grid and “tf” transform. The TEB planner uses a simple Ackermann steering model. When selecting a navigation goal, it calls on the local and global planners to find a path in planner, which then publishes waypoints (in the form of a Twist) to the cmd_vel topic. This Twist is then converted to PWM values for our steering and drive motors. These values are then subscribed to with the drive-by-wire computer communication node to send the necessary signals to the ESC and servo.
@@ -253,10 +264,10 @@
                     </p>
                     <div class="row">
                       <div class="column">
-                        <img alt="Image" src="img/multiple_cameras.jpg" width="550" height="300" />
+                        <img alt="Image" src="img/multiple_cameras.jpg" width="500" height="300" />
                       </div>
                       <div class="column">
-                        <img alt="Image" src="img/go_sign-1.png" width="550" height="300" />
+                        <img alt="Image" src="img/go_sign-1.png" width="500" height="300" />
                       </div>
                     </div>
                     <p>
@@ -267,7 +278,7 @@
                         <img alt="Image" src="img/urdf_tree.png" width="550" height="300" />
                       </div>
                       <div class="column">
-                        <img alt="Image" src="img/urdf_rviz.png" width="550" height="300" />
+                        <img alt="Image" src="img/urdf_rviz.png" width="400" height="300" />
                       </div>
                     </div>
                  </div>
