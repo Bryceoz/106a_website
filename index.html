@@ -150,6 +150,7 @@
                               <p class="lead">
                                 An autonomous car, built from the ground up.
                               </p>
+                                <p class="lead">All of our code for the AMAC car is publicly available on our github at: <a href="https://github.com/AMABerkeley/" target="_blank">AMAC Github</a>.</p>
                               <p>
                                 <b>Hardware included:</b> <br>
                                 Ouster LIDAR <br>
@@ -207,7 +208,7 @@
                               <h2>AMAC Operations Diagram</h2>
                               <p class="lead">
                                 <!-- An autonomous car, built from the ground up. -->
-                                Every sensor integration - both hardware and software - were built from the ground up.
+                                Every sensor integration - both hardware and software - were built from the ground up. 
                               </p>
 
                               <!--<a href="#">Learn More &raquo;</a>-->
@@ -482,10 +483,21 @@
           <div class="row">
               <div class="col-md-12">
 
-                 <p>
-                   Put conclusion stuff here
+                <p>
+                   We were excited to see each part of this project come together and meet our design goals. The autonomous RC car was able to successfully path plan, identify objects, and actuate depending on these. Furthermore, the VR teleoperation system was able to successfully visualize objects in front of the robotic manipulator and real-time send desired gripper poses and grasping values to the robot’s ROS system. 
+                </p>
+                <p>
+                  One of the biggest initial challenges was wiring the entire circuit on the car. There are many different electrical components on board the car and it is challenging to keep track of all the wires! Another challenge was getting the drive-by-wire computer to interface with ROS. It took a long time before we were able to even drive the car by wire. Another challenge was getting our occupancy grid to update fast enough for the car to properly avoid obstacles. 
+                </p>
+                <p>
+                  Our navigation package assumed a differential robot rather than a car-like robot like our system, and thus published command velocities for a robot which had different constraints than our own. We attempted to hack this by massaging these velocities to obey the constraints of our system. We utilized a kinematic bicycle model to do this. Unfortunately, this did not work as well as we had hoped and with more time, we would utilize a planner that uses car-like dynamics to plan a trajectory. Several improvements could be made to the visualization of the data we are collecting. An integration of the LiDAR point cloud with the VR environment would be a useful next step. Additionally, the URDF could be made such that the front two wheels are connected through by the “Ackermann Steering” mechanism. The LiDAR point cloud could also be overlayed with camera information to assist with object detection and avoidance. 
+                </p>
+                <p>
+                  With additional time, the VR teleoperation system could be extended to generalize to all robotic manipulator systems. With some slight redesigns, the project could be open sourced as a general interface for robotic manipulators and the user of the project would simply have to set up the VR interface’s URDF, network, and other minor parameters. Additionally, the system could be extended to incorporate multiple camera system for greater visual flexibility for the operator. This work will be done as the project is continued next semester in the same research lab. 
                  </p>
-
+                 <p>
+                  All in all we learned a tremendous amount from this project and will continue research on it inn the coming semesters. All of our code for the AMAC car is publicly available on our github at:  <a href="https://github.com/AMABerkeley/" target="_blank">AMAC Github</a>.
+                </p>
 
 
               </div>
@@ -510,16 +522,6 @@
                              <span><b>Major:</b> EECS <br>
                               <b>Experience:</b> Strong background in graphics, SLAM, computer vision, and AR/VR. Worked on these technologies at NASA, Apple, and Magic Leap as well as under Dr. Allen Yang / Shankar Sastry in the Center for Augmented Cognition.
                               </span>
-
-                         </div>
-                     </div>
-                     <div class="col-md-3">
-                         <div class="feature feature-8">
-                             <img alt="Image" src="img/andy2.jpg" />
-                             <h5>Andy Meyers</h5>
-                             <span><b>Major: </b>Mechanical Engineering <br>
-Experience: has worked on a “biomimetic lizard robot”, previous product design experience at Apple
-</span>
                          </div>
                      </div>
                      <div class="col-md-3">
@@ -527,7 +529,7 @@ Experience: has worked on a “biomimetic lizard robot”, previous product desi
                              <img alt="Image" src="img/travis.png" />
                              <h5>Travis Brashears</h5>
                              <span><b>Major:</b> Engineering Physics <br>
-<b>Experience:</b> have worked on space systems and satellites. Also worked on lidar at Uber ATG
+<b>Experience:</b> Send stuff to space, work on lidar at Uber ATG, and research lasers in space.
 </span>
                          </div>
                      </div>
@@ -541,7 +543,15 @@ Experience: has worked on a “biomimetic lizard robot”, previous product desi
                              </span>
                          </div>
                      </div>
-
+                     <div class="col-md-3">
+                         <div class="feature feature-8">
+                             <img alt="Image" src="img/andy2.jpg" />
+                             <h5>Andy Meyers</h5>
+                             <span><b>Major: </b>Mechanical Engineering <br>
+Experience: has worked on a “biomimetic lizard robot”, previous product design experience at Apple
+</span>
+                         </div>
+                     </div>
                  </div>
                  <!--end of row-->
              </div>
