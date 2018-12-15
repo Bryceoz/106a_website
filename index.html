@@ -60,7 +60,7 @@
 
                                 </ul>
                             </div>
-                            
+
                         </div>
                     </div>
                     <!--end of row-->
@@ -94,7 +94,6 @@
                         <div class="col-md-10 col-lg-8">
                             <h2 class="text-center">Overview Video</h2>
                             <p class="lead">
-                              The future of autonomous robotic teleoperation systems.
                             </p>
                         </div>
                     </div>
@@ -242,18 +241,20 @@
              <div class="row">
                  <div class="col-md-12">
                     <h2>AMAC Implementation</h2>
-                    
+
                     <div class="center">
                       <img alt="Image" src="img/car_diagram2.png"/>
                     </div>
                     <p>
                       A “driver” was necessary to communicate with the LiDAR via Ethernet. This “3DPointCloud” is converted by projecting 3D points into a 2D LaserScan structure (defined by a pre-existing Velodyne LiDAR package), which will be used for creating a map.
                     </p>
+
                     <p>
-                      In parallel, the Inertial Navigation System (INS) publishes a unique message type “ins” which is converted to an odometry message “odom”. 
+                      In parallel, the Inertial Navigation System (INS) publishes a unique message type “ins” which is converted to an odometry message “odom”.
                     </p>
+
                     <p>
-                      The ROS package, gmapping, uses 5DOF slam with the 2D laserscan and the odometry message to publish data in an occupancy grid and to determine relative position for our environment. Our system is also capable of 6DOF slam. 
+                      The ROS package, gmapping, uses 5DOF slam with the 2D laserscan and the odometry message to publish data in an occupancy grid and to determine relative position for our environment. Our system is also capable of 6DOF slam.
                     </p>
                     <p>
                       The navigation stack uses a TEB planner to develop a local and global cost map which utilizes the occupancy grid and “tf” transform. When selecting a navigation goal, it calls on the local and global planners to find a path in planner, which then publishes waypoints (in the form of a Twist) to the cmd_vel topic. This Twist is then converted to PWM values for our steering and drive motors. These values are then subscribed to with the drive-by-wire computer communication node to send the necessary signals to the ESC and servo.
@@ -267,7 +268,7 @@
                     <p>
                       A URDF model of the car was created from a 3D CAD in Solidworks. All coordinate frames were connected appropriately in the tf tree. The “tf” and “map” topics were subscribed to by the navigation stack.
                     </p>
-    
+
                  </div>
              </div><!--end of row-->
             </div><!--end of container-->
@@ -276,20 +277,11 @@
               <div class="container">
                 <h2>AMAC Results</h2>
                 <p>
-                  The car demonstrated most of the functionality we were hoping to accomplish. The car was able to generate a map of its environment and localize itself using the various sensors we incorporated. We were then able to select a destination for the car to drive to and it would plan a trajectory to the destination and drive there. In addition, the car was able to identify pre-trained objects with computer vision when placed in front of the car and act accordingly. 
+                  The car demonstrated most of the functionality we were hoping to accomplish. The car was able to generate a map of its environment and localize itself using the various sensors we incorporated. We were then able to select a destination for the car to drive to and it would plan a trajectory to the destination and drive there. In addition, the car was able to identify pre-trained objects with computer vision when placed in front of the car and act accordingly.
                 </p>
                   <!--end of row-->
               </div>
               <!--end of container-->
-          </section>
-
-
-          <!--START VR STUFF-->
-
-          <section class="imagebg" class="pos-vertical-center" data-gradient-bg="#328A2E,#256F5C,#29506D,#047BE6">
-            <div class="text-center">
-                      <h1>VR Teleoperation System</h1>
-            </div>
           </section>
 
           <section>
@@ -330,7 +322,57 @@
               <!--end of container-->
           </section>
 
+          <section class="imagebg" class="pos-vertical-center" data-gradient-bg="#328A2E,#256F5C,#29506D,#047BE6">
+            <div class="text-center">
+                      <h1>VR Teleoperation System</h1>
+            </div>
+          </section>
 
+          <section>
+            <div class="container">
+             <div class="row">
+                 <div class="col-md-12">
+
+                    <p>
+                      <b> VR Teleoperation Criteria: </b> <br>
+                      Successfully view robotic manipulator’s environment via depth map stream. <br>
+                      Communicate VR 6DOF poses to IK solver on robotic device. <br>
+                      Record teleoperation movements and play movement back. <br>
+                    </p>
+                 </div>
+             </div><!--end of row-->
+            </div><!--end of container-->
+          </section>
+
+          <section class="switchable feature-large bg--secondary">
+              <div class="container">
+                  <div class="row justify-content-around">
+                      <div class="col-md-6">
+                          <img alt="Image" class="border--round box-shadow-wide" src="img/car_model2.png" />
+                      </div>
+                      <div class="col-md-6 col-lg-5">
+                          <div class="switchable__text">
+                              <h2>The AMAC</h2>
+                              <p class="lead">
+                                An autonomous car, built from the ground up.
+                              </p>
+                              <p>
+                                <b>Hardware included:</b> <br>
+                                Ouster LIDAR <br>
+                                IMU <br>
+                                3 RGB Camera Assembly <br>
+                                Intel NUC <br>
+                                BLDC Motor <br>
+                                ESC - Motor Controller <br>
+                              </p>
+                              <!--<a href="#">Learn More &raquo;</a>-->
+                          </div>
+                      </div>
+                  </div>
+                  <!--end of row-->
+              </div>
+              <!--end of container-->
+          </section>
           <section>
             <div class="container">
              <div class="row">
