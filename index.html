@@ -25,13 +25,9 @@
                     <div class="row">
                         <div class="col-3 col-md-2">
                             <a href="index.html">
-                                <!--<img class="logo logo-dark" alt="logo" src="img/.png" />
-                                <img class="logo logo-light" alt="logo" src="img/.png" />-->
+                                <img class="logo logo-dark" alt="logo" src="img/lidar.png" />
+                                <img class="logo logo-light" alt="logo" src="img/lidar.png" />
 
-                                <video autoplay loop muted>
-                                  <source src="img/car_driving.mp4" type="video/mp4">
-                                  Your browser does not support the video tag.
-                                </video>
 
 
                             </a>
@@ -53,8 +49,7 @@
                         <div class="col-lg-1 col-md-2 hidden-xs">
                             <div class="bar__module">
                                 <a href="index.html">
-                                    <!--<img class="logo logo-dark" alt="logo" src="img/.png" />
-                                    <img class="logo logo-light" alt="logo" src="img/.png" />-->
+
                                 </a>
                             </div>
                             <!--end module-->
@@ -65,20 +60,7 @@
 
                                 </ul>
                             </div>
-                            <!--end module
-                            <div class="bar__module">
-                                <a class="btn btn--sm type--uppercase" href="#">
-                                    <span class="btn__text">
-                                        Try Builder
-                                    </span>
-                                </a>
-                                <a class="btn btn--sm btn--primary type--uppercase" href="#">
-                                    <span class="btn__text">
-                                        Buy Now
-                                    </span>
-                                </a>
-                            </div>
-                            end module-->
+                            
                         </div>
                     </div>
                     <!--end of row-->
@@ -90,31 +72,10 @@
 
 
         <div class="main-container">
-            <section class="imagebg videobg height-80 parallax" data-overlay="3">
-                <div class="background-image-holder background--top">
-                    <!--<img alt="image" src="img/blue_arm.jpg" />-->
-
-                    <video autoplay loop muted>
-                      <source src="video/test.mp4" type="video/mp4">
-                      Your browser does not support the video tag.
-                    </video>
-
-                </div>
-
-        <!--        <section class="imagebg videobg height-60 text-center" data-overlay="4">
-          <video autoplay loop muted>
-          <source src="video/video.webm" type="video/webm">
-          <source src="video/video.mp4" type="video/mp4">
-          <source src="video/video.ogv" type="video/ogv">
-          </video>
-          <div class="background-image-holder">
-          <img alt="image" src="poser.jpg" />
-          </div>
-          <div class="container pos-vertical-center">
-          CONTENT
-          </div>
-        </section>-->
-
+          <section class="imagebg height-80 parallax" data-overlay="3">
+                     <div class="background-image-holder background--top">
+                         <img alt="image" src="img/lidar.png" />
+                     </div>
                 <div class="container">
                     <div class="row">
                         <div class="col-md-12">
@@ -150,7 +111,7 @@
                                     <img alt="image" src="img/work-single-1.jpg" />
                                 </div>
                                 <div class="video-play-icon"></div>
-                                <iframe data-src="https://www.youtube.com/embed/T6W74NOqG_E?autoplay=1" allowfullscreen="allowfullscreen"></iframe>
+                                <iframe data-src="https://www.youtube.com/embed/UFQFUFGn_38?autoplay=1" allowfullscreen="allowfullscreen"></iframe>
                             </div>
                             <!--end video cover-->
                             <span>A trailer made by Stack to showcase the new Nike Active brand</span>
@@ -170,11 +131,17 @@
 	             <div class="row">
 		               <div class="col-md-12">
                       <p>
-                        The goal of this project is to combine two key elements through Virtual Reality: LIDAR data from an autonomous RC car and using a custom robotic arm system for sensing the environment and manipulation.                       </p>
+                        The goal of this project is to combine two key elements through Virtual Reality: LIDAR data from an autonomous RC car and using a custom robotic manipulator system for sensing the environment and manipulation.
+                       </p>
                       <p>
-                        Integration multiple sensors onto a vehicle that can enable autonomous decision-making is a modern-challenge. Interaction between two robots that are not directly communicating is another problem that this project addresses.                       </p>
+                        This project is unique because it requires integration of multiple sensors onto a vehicle that can enable autonomous decision-making is a modern-challenge. Creating an interface for remote robotic control is an open research problem which when done correctly, could enable remote blue-collar work around the world. Lastly, the interaction between two robots that are not directly communicating is another problem that this project addresses.
+                      </p>
                       <p>
-                        A direct use case is in hospitals, where the autonomous RC car can deliver medications or and the Blue Robot can be teleoperated or trained to pick up the medicine and administer it to a patient in a hospital room. Another use case is in a manufacturing facility, where the car can deliver parts to various parts of the factory, and the robot can then be manipulated to use these parts in the assembly line (great for low-volume, high-mix manufacturing).
+                        A direct use case of this system is in hospitals, where the autonomous RC car can deliver medications or and the Blue Robot can be teleoperated or trained to pick up the medicine and administer it to a patient in a hospital room. Another use case is in a manufacturing facility, where the car can deliver parts to various parts of the factory, and the robot can then be manipulated to use these parts in the assembly line (great for low-volume, high-mix manufacturing).
+                      </p>
+
+                      <p>
+                        Our overarching goal is to integrate an autonomous vehicle and the “blue” robotic manipulator in the same environment so that they can collaboratively solve an assigned task that demonstrates the abilities of each system to their full degree. The design criteria for the car includes having robust components for the car in addition to features such as path planning and object detection, following, and avoidance.
                       </p>
                    </div>
 	             </div><!--end of row-->
@@ -184,33 +151,65 @@
           </section>
           <section class="imagebg" class="pos-vertical-center" data-gradient-bg="#328A2E,#256F5C,#29506D,#047BE6">
             <div class="text-center">
-                      <h1>Design</h1>
+                      <h1>The AMAC Autonomous Car</h1>
+                      <p>
+                        An autonomous car, built from the ground up.
+                      </p>
             </div>
           </section>
-
+          <section class="switchable feature-large bg--secondary">
+              <div class="container">
+                  <div class="row justify-content-around">
+                      <div class="col-md-6">
+                          <img alt="Image" class="border--round box-shadow-wide" src="img/car_model2.png" />
+                      </div>
+                      <div class="col-md-6 col-lg-5">
+                          <div class="switchable__text">
+                              <h2>The AMAC</h2>
+                              <p class="lead">
+                                An autonomous car, built from the ground up.
+                              </p>
+                              <p>
+                                <b>Hardware included:</b> <br>
+                                Ouster LIDAR <br>
+                                IMU <br>
+                                3 RGB Camera Assembly <br>
+                                Intel NUC <br>
+                                BLDC Motor <br>
+                                ESC - Motor Controller <br>
+                              </p>
+                              <!--<a href="#">Learn More &raquo;</a>-->
+                          </div>
+                      </div>
+                  </div>
+                  <!--end of row-->
+              </div>
+              <!--end of container-->
+          </section>
           <section>
             <div class="container">
              <div class="row">
                  <div class="col-md-12">
-                    <p>
-                      Our overarching goal is to integrate an autonomous vehicle and the “blue” robotic manipulator in the same environment so that they can collaboratively solve an assigned task that demonstrates the abilities of each system to their full degree.                    </p>
+
+                   <h2>AMAC Design Criteria: </h2>
+                      <!-- Path planning, object detection, following, and avoidance -->
                     </p>
 
                     <p>
-                      <b> Autonomous Car Design Criteria: </b> <br>
-                      <!-- Path planning <br>
-                      Object detection <br>
-                      Object following <br>
-                      Object avoidance <br> -->
-                      The design criteria for the car includes having robust components for the car in addition to features such as path planning and object detection, following, and avoidance. A demonstration of this criteria includes the vehicle driving to a location near the robot, the VR teleoperated robot picking up an item and placing it on the car for transport, and the car driving away with this item.
-                    </p>
+                      First, we had to consider what we could actually accomplish in a single semester.
+                      For this car, we prioritized sensors that would aid in environment mapping, localization, and nearby object detection, so we chose a LiDAR, Inertial Navigation System (INS), and 3 cameras. Most of the RC car components were purchased off the shelf so we could focus on sensor, planning, and actuation. Ultrasonic sensors were also considered for low-proximity object detection for emergency stopping and planning.
+                      A demonstration of this criteria includes the vehicle driving to a location near the robot, the VR teleoperated robot picking up an item and placing it on the car for transport, and the car driving away with this item.
+
+
+                      </p>
 
                     <p>
-                      <b> Autonomous Car Design: </b> <br>
-                      First, we had to consider what we could actually accomplish in a single semester. For this car, we prioritized sensors that would aid in environment mapping, localization, and nearby object detection, so we chose a LiDAR, Inertial Navigation System (INS), and 3 cameras. Most of the RC car components were purchased off the shelf so we could focus on sensor, planning, and actuation. Ultrasonic sensors were also considered for low-proximity object detection for emergency stopping and planning.
-                      <br> <br>
-                      These design choices were crucial in meeting our initial goals and design criteria as we wanted each robot to mimic real engineering situations and could be scalable as such. The computer, an Intel NUC, was essential for processing all of the sensor data into vehicle control commands. The battery (7 cell 29.4V, 6000Mah, 144Wh) was selected to account for the heavy power demand from the computer, drivetrain, and sensors. These design decisions were crucial in best exhibiting that our project would be as robust, durable, and efficient as possible.
+                      These design choices were crucial in meeting our initial goals and design criteria as we wanted each robot to mimic real engineering situations and could be scalable as such. The computer, an Intel NUC, was essential for processing all of the sensor data into vehicle control commands. The battery (7 cell 29.4V, 6000Mah, 144Wh) was selected to account for the heavy power demand from the computer, drivetrain, and sensors.
+                      The design criteria for the car includes having robust components for the car in addition to features such as path planning and object detection, following, and avoidance.
+                      These design decisions were crucial in best exhibiting that our project would be as robust, durable, and efficient as possible.
                     </p>
+
+
                  </div>
              </div><!--end of row-->
             </div><!--end of container-->
@@ -226,8 +225,8 @@
                           <div class="switchable__text">
                               <h2>The AMAC Operations Diagram</h2>
                               <p class="lead">
-                                An autonomous car, built from the ground up.
-                                CAN PROBABLY PUT A BETTER CAPTION
+                                <!-- An autonomous car, built from the ground up. -->
+                                INSERT GOOD CAPTION HERE
                               </p>
 
                               <!--<a href="#">Learn More &raquo;</a>-->
@@ -237,6 +236,60 @@
                   <!--end of row-->
               </div>
               <!--end of container-->
+          </section>
+          <section>
+            <div class="container">
+             <div class="row">
+                 <div class="col-md-12">
+                    <h2>AMAC Implementation</h2>
+                    
+                    <div class="center">
+                      <img alt="Image" src="img/car_diagram2.png"/>
+                    </div>
+                    <p>
+                      A “driver” was necessary to communicate with the LiDAR via Ethernet. This “3DPointCloud” is converted by projecting 3D points into a 2D LaserScan structure (defined by a pre-existing Velodyne LiDAR package), which will be used for creating a map.
+                    </p>
+                    <p>
+                      In parallel, the Inertial Navigation System (INS) publishes a unique message type “ins” which is converted to an odometry message “odom”. 
+                    </p>
+                    <p>
+                      The ROS package, gmapping, uses 5DOF slam with the 2D laserscan and the odometry message to publish data in an occupancy grid and to determine relative position for our environment. Our system is also capable of 6DOF slam. 
+                    </p>
+                    <p>
+                      The navigation stack uses a TEB planner to develop a local and global cost map which utilizes the occupancy grid and “tf” transform. When selecting a navigation goal, it calls on the local and global planners to find a path in planner, which then publishes waypoints (in the form of a Twist) to the cmd_vel topic. This Twist is then converted to PWM values for our steering and drive motors. These values are then subscribed to with the drive-by-wire computer communication node to send the necessary signals to the ESC and servo.
+                    </p>
+                    <p>
+                      Alternatively, the car can also be controlled via object detection through the front cameras. When running the object detection scheme, the raw camera data is published to usb_cam and the object detection package determines where in the frame the object exists. Depending on the object seen, the car will perform different actions. We trained 3 different signs, Reverse, Follow, and Stop. This information also publishes to the “cmd_vel” topic as a Twist and is processed by the Control Interface the same way messages from the Navigation stack are processed.
+                    </p>
+                    <div class="center">
+                      <img alt="Image" src="img/urdf_tree.png" width="550" height="300" />
+                    </div>
+                    <p>
+                      A URDF model of the car was created from a 3D CAD in Solidworks. All coordinate frames were connected appropriately in the tf tree. The “tf” and “map” topics were subscribed to by the navigation stack.
+                    </p>
+    
+                 </div>
+             </div><!--end of row-->
+            </div><!--end of container-->
+          </section>
+          <section class="switchable feature-large bg--secondary">
+              <div class="container">
+                <h2>AMAC Results</h2>
+                <p>
+                  The car demonstrated most of the functionality we were hoping to accomplish. The car was able to generate a map of its environment and localize itself using the various sensors we incorporated. We were then able to select a destination for the car to drive to and it would plan a trajectory to the destination and drive there. In addition, the car was able to identify pre-trained objects with computer vision when placed in front of the car and act accordingly. 
+                </p>
+                  <!--end of row-->
+              </div>
+              <!--end of container-->
+          </section>
+
+
+          <!--START VR STUFF-->
+
+          <section class="imagebg" class="pos-vertical-center" data-gradient-bg="#328A2E,#256F5C,#29506D,#047BE6">
+            <div class="text-center">
+                      <h1>VR Teleoperation System</h1>
+            </div>
           </section>
 
           <section>
@@ -249,15 +302,6 @@
                       Successfully view robotic manipulator’s environment via depth map stream. <br>
                       Communicate VR 6DOF poses to IK solver on robotic device. <br>
                       Record teleoperation movements and play movement back. <br>
-                      <!-- For the VR teleoperation system, the design prioritized an interface which both stayed within the computational limits of the VR system and also gave the teleoperator the most intuitive, powerful interface. <br> -->
-                    </p>
-                    <p>
-                      <b> VR Teleoperation Design: </b> <br>
-                      For the VR teleoperation system, the design prioritized an interface which both stayed within the computational limits of the VR system and also gave the teleoperator the most intuitive, powerful interface. For example, multiple depth-sensing cameras could not be incorporated to make the VR vision of the environment better due to the computational limits of the system we were building on. 
-                      <br> <br>
-                      Additionally, we sought to design the human-robot interaction system such that the operator could easily control the orientation of the robot gripper, regardless of their wrist’s true orientation. From this design requirement, we formulated that the user should be able to “clutch” the robot graspers and easily disengage from the control of the graspers. This is seen in the visualization below.
-                      <br><br>
-                      The design choices for the VR teleoperation system heavily impact the graphical efficiency of the system, the functionality and usability of the remote interaction, and its successful communication with the robotic manipulator. The ROS# was selected as an interface to ROS through Unity so that the VR interface can be easily maintainable for future users and developers. Additionally, the VR scene was designed such that minimal changes should be needed for other robotic or VR systems.
                     </p>
                  </div>
              </div><!--end of row-->
@@ -286,60 +330,28 @@
               <!--end of container-->
           </section>
 
-          <section class="imagebg" class="pos-vertical-center" data-gradient-bg="#328A2E,#256F5C,#29506D,#047BE6">
-            <div class="text-center">
-                      <h1>Implementantion</h1>
-            </div>
-          </section>
-          <section class="switchable feature-large bg--secondary">
-              <div class="container">
-                  <div class="row justify-content-around">
-                      <div class="col-md-6">
-                          <img alt="Image" class="border--round box-shadow-wide" src="img/car_model2.png" />
-                      </div>
-                      <div class="col-md-6 col-lg-5">
-                          <div class="switchable__text">
-                              <h2>The AMAC</h2>
-                              <p class="lead">
-                                An autonomous car, built from the ground up.
-                              </p>
-                              <p>
-                                <b>Hardware included:</b> <br>
-                                Ouster LIDAR <br>
-                                Inertial Sense INS <br>
-                                3 RGB Camera Assembly <br>
-                                Intel NUC <br>
-                                BLDC Motor <br>
-                                ESC - Motor Controller <br>
-                                Arduino <br>
-                              </p>
-                              <!--<a href="#">Learn More &raquo;</a>-->
-                          </div>
-                      </div>
-                  </div>
-                  <!--end of row-->
-              </div>
-              <!--end of container-->
-          </section>
+
           <section>
             <div class="container">
              <div class="row">
                  <div class="col-md-12">
-                   <h2>AMAC Autonomous Car</h2>
-                   <p>
-                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                   </p>
-                   <p>
-                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                   </p>
-                   <p>
-                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                   </p>
+
+                    <h2>VR Teleoperation System </h2>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
 
                  </div>
              </div><!--end of row-->
             </div><!--end of container-->
           </section>
+
           <section class="switchable feature-large bg--secondary">
               <div class="container">
                   <div class="row justify-content-around">
@@ -366,67 +378,9 @@
               </div>
               <!--end of container-->
           </section>
-          
-          <section>
-            <div class="container">
-             <div class="row">
-                 <div class="col-md-12">
-
-                    <h2>VR Teleoperation System </h2>
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                    </p>
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                    </p>
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                    </p>
-
-                 </div>
-             </div><!--end of row-->
-            </div><!--end of container-->
-          </section>
-          <section>
-            <div class="container">
-             <div class="row">
-                 <div class="col-md-12">
-
-                    <h2> Combined System </h2>
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                    </p>
-
-                 </div>
-             </div><!--end of row-->
-            </div><!--end of container-->
-          </section>
 
         </section>
-        <section class="imagebg" class="pos-vertical-center" data-gradient-bg="#328A2E,#256F5C,#29506D,#047BE6">
-          <div class="text-center">
-                    <h1>Results</h1>
-          </div>
-        </section>
-        <section>
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-md-12 col-lg-10 text-center">
-                        <div class="video-cover box-shadow border--round">
-                            <div class="background-image-holder">
-                                <img alt="image" src="img/work-single-1.jpg" />
-                            </div>
-                            <div class="video-play-icon"></div>
-                            <iframe data-src="https://www.youtube.com/embed/T6W74NOqG_E?autoplay=1" allowfullscreen="allowfullscreen"></iframe>
-                        </div>
-                        <!--end video cover-->
-                        <span>A trailer made by Stack to showcase the new Nike Active brand</span>
-                    </div>
-                </div>
-                <!--end of row-->
-            </div>
-            <!--end of container-->
-        </section>
+
           <section class=" bg--secondary">
            <div class="container">
                <div class="row">
